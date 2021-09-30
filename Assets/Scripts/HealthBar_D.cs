@@ -3,21 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class HealthBar : MonoBehaviour
+public class HealthBar_D : MonoBehaviour
 {
-
-    // Get the HealthBar Slider
     public Slider slider;
-    // Start is called before the first frame update
-    
-    // Set Max Health function
+
+    //Set Max Health Function
     public void SetMaxHealth(int health)
     {
         slider.maxValue = health;
         slider.value = health;
     }
-    
-    // Set Slider value equal to the health value
+
     public void SetHealth(int health)
     {
         slider.value = health;
